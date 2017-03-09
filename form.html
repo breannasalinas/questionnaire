@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<title> Questionnaire </title>
+<style> 
+
+body 
+{
+font-family: sans-serif;
+color: #000000; 
+background-color: #501214;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #501214;
+    color: white;
+   padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #6a5638;
+}
+
+input[type=reset] {
+    width: 20%;
+    background-color: #501214;
+    color: white;
+ padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #6a5638;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#section {
+position: relative;
+width:950px; 
+background-color: white; 
+margin: auto;;
+border: 2px solid gray;
+}
+@media screen and (max-width: 550px) {
+#nav a {
+font-size: 80%;
+}
+
+#footer {
+display: none;
+}
+}
+
+</style>
+</head>
+<body>
+
+
+ 
+
+<div id= "section">
+<p><h1><center><a href="http://www.masscomm.txstate.edu/"><img src="images.png" /></a></center></h1></p>
+
+  <form action="action_page.php">
+  <h3>Fill in your first and last name:</h3>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname">
+    
+<h3>What gender do you identify with?</h3>
+ <p><input type="radio" name="gender" value="male" />Male<br>
+    <input type="radio" name="gender" value="female" />Female <br>
+     <input type="radio" name="gender" value="notspecified" />I do not identify with any of the choices provided </p>
+    
+<p>
+    <label for="country"><h3>Select your prospective concentration:</h3></label>
+    <select id="country" name="country">
+      <option value="masscomm">Mass Communication - General</option>
+      <option value="dmi">Digital Media Innovation</option>
+      <option value="elecmedia">Electronic Media</option>
+      <option value="pr">Public Relations</option>
+      <option value="journalism">Journalism</option>
+      <option value="ad">Advertising</option>
+       <option value="digitalmedia">Graduate - Digital Media</option>
+      <option value="stratcomm">Graduate - Strategic Communication</option>
+      <option value="global">Graduate - Global Media</option>
+       <option value="latin">Graduate - Latinos and Media</option>
+    </select></p>
+    
+   <p>
+   <h3>I have experience/skill in...</h3> <br>
+    <input type="checkbox" name="skill" value="wordpress" />Wordpress<br>
+    <input type="checkbox" name="skill" value="html" />HTML<br>
+    <input type="checkbox" name="skill" value="css" />CSS<br>
+    <input type="checkbox" name="skill" value="bootstrap" />Bootstrap<br>
+    <input type="checkbox" name="skill" value="prototype" />Creating app prototypes<br>
+    <input type="checkbox" name="skill" value="javascript" />JavaScript<br>
+    <input type="checkbox" name="skill" value="git" />Git/Github<br>
+    <input type="checkbox" name="skill" value="imovie" />iMovie<br>
+    <input type="checkbox" name="skill" value="photoshop" />Photoshop<br>
+    <input type="checkbox" name="skill" value="indesign" />InDesign<br>
+    <input type="checkbox" name="skill" value="finalcut" />Final Cut Pro<br>
+    <input type="checkbox" name="skill" value="imovie" />AP Style<br>
+    <input type="checkbox" name="skill" value="blogging" />Blogging<br>
+    <input type="checkbox" name="skill" value="newsletter" />Creating Newsletters<br>
+    <input type="checkbox" name="skill" value="pressrelease" />Creating Press Release Kits<br></p>
+  <p>
+  <h3>Prospective goals:</h3>
+  <label for="fname">
+  What do you want to achieve during your time at Texas State University, if enrolled?</label></br><br>
+  
+    <input type="text"></p>
+    <p>
+    <center><input type="submit" value="Submit"> <input type="reset" value="Reset"></center></p>
+  </form>
+  
+
+</div>
+
+</body>
+</html>
